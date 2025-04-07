@@ -29,11 +29,21 @@ struct LiveMatchScoreLiveActivity: Widget {
                    DynamicIslandBottom(context: context)
                 }
             } compactLeading: {
-                Text("Auction 2025")
-                    .font(.custom(type: .HNMedium, size: 12))
+                HStack {
+                    Image(context.state.homeTeamName)
+                        .resizable()
+                        .frame(width: 32,height: 32)
+                    Text(context.state.homeTeamName)
+                }
+                .font(.custom(type: .HNMedium, size: 12))
             } compactTrailing: {
-                Image("logo")
-                    .resizable()
+                HStack {
+                    Text(context.state.awayTeamName)
+                    Image(context.state.awayTeamName)
+                        .resizable()
+                        .frame(width: 32,height: 32)
+                }
+                .font(.custom(type: .HNMedium, size: 12))
             } minimal: {
                 Image("logo")
                     .resizable()
