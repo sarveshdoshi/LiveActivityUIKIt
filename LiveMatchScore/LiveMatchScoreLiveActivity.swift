@@ -46,20 +46,20 @@ struct LiveMatchScoreLiveActivity: Widget {
 }
 
 struct AuctionWidgetLiveActivity_Previews: PreviewProvider {
-    static let attributes = LiveMatchScoreAttributes(
-        headerTitle: "IPL Auction 2025",
-        currentDate: "11/11/2024"
-    )
+    static let attributes = LiveMatchScoreAttributes()
     
     static let contentState = LiveMatchScoreAttributes.ContentState(
         homeTeamName: "MI",
         awayTeamName: "RCB",
-        homeScore: "120",
-        homeWicketCount: "4",
-        homeOverCount: "22.0",
+        homeScore: "0",
+        homeWicketCount: "0",
+        homeOverCount: "0",
         awayScore: "0",
         awayWicketCount: "0",
-        awayOverCount: "0"
+        awayOverCount: "0",
+        headerText: "IPL Match 25",
+        summaryText: "MI Won the toss and elected to Field",
+        innings: 2
     )
     
     static var previews: some View {

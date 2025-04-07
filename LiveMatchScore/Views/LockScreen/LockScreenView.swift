@@ -24,6 +24,7 @@ struct LockScreenView: View {
             // Bottom View
             BottomView(context: context)
         }
-        .padding(.vertical, 8)
+        .padding(.top, 8)
+        .background(.windowBackground)
     }
 }

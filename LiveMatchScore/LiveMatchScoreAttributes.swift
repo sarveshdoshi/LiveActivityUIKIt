@@ -21,8 +21,9 @@ struct LiveMatchScoreAttributes: ActivityAttributes {
         var awayScore: String
         var awayWicketCount: String
         var awayOverCount: String
+        var headerText: String
+        var summaryText: String
+        var innings: Int
     }
     
-    var headerTitle : String
-    var currentDate : String
 }

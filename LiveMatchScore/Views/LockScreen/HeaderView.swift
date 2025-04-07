@@ -13,7 +13,7 @@ struct HeaderView: View {
     
     var body: some View {
         HStack {
-            Text(context.attributes.headerTitle)
+            Text(context.state.headerText)
             Spacer()
             Text(Date.now.formatted(date: .numeric, time: .shortened))
         }
