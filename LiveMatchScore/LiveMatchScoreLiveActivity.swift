@@ -18,16 +18,15 @@ struct LiveMatchScoreLiveActivity: Widget {
         } dynamicIsland: { context in
             DynamicIsland {
                 // Expanded UI
-                
                 DynamicIslandExpandedRegion(.leading) {
-                   
+                   DynamicIslandLeading(context: context)
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                   
-                    
+                   DynamicIslandTrailing(context: context)
                 }
+                
                 DynamicIslandExpandedRegion(.bottom) {
-                    
+                   DynamicIslandBottom(context: context)
                 }
             } compactLeading: {
                 Text("Auction 2025")
@@ -51,15 +50,15 @@ struct AuctionWidgetLiveActivity_Previews: PreviewProvider {
     static let contentState = LiveMatchScoreAttributes.ContentState(
         homeTeamName: "MI",
         awayTeamName: "RCB",
-        homeScore: "0",
-        homeWicketCount: "0",
+        homeScore: "120",
+        homeWicketCount: "6",
         homeOverCount: "0",
-        awayScore: "0",
-        awayWicketCount: "0",
+        awayScore: "110",
+        awayWicketCount: "9",
         awayOverCount: "0",
         headerText: "IPL Match 25",
         summaryText: "MI Won the toss and elected to Field",
-        innings: 2
+        innings: 0
     )
     
     static var previews: some View {
