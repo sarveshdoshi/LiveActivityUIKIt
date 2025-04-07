@@ -65,6 +65,8 @@
 				"Font+Extension.swift",
 				LiveMatchScoreAttributes.swift,
 				Views/DynamicIsland/DynamicIslandBottom.swift,
+				Views/DynamicIsland/DynamicIslandCompactLeading.swift,
+				Views/DynamicIsland/DynamicIslandCompactTrailing.swift,
 				Views/DynamicIsland/DynamicIslandLeading.swift,
 				Views/DynamicIsland/DynamicIslandTrailing.swift,
 				Views/LockScreen/AwayTeamScoreView.swift,

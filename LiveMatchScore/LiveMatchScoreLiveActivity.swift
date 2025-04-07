@@ -29,21 +29,9 @@ struct LiveMatchScoreLiveActivity: Widget {
                    DynamicIslandBottom(context: context)
                 }
             } compactLeading: {
-                HStack {
-                    Image(context.state.homeTeamName)
-                        .resizable()
-                        .frame(width: 32,height: 32)
-                    Text(context.state.homeTeamName)
-                }
-                .font(.custom(type: .HNMedium, size: 12))
+               DynamicIslandCompactLeading(context: context)
             } compactTrailing: {
-                HStack {
-                    Text(context.state.awayTeamName)
-                    Image(context.state.awayTeamName)
-                        .resizable()
-                        .frame(width: 32,height: 32)
-                }
-                .font(.custom(type: .HNMedium, size: 12))
+               DynamicIslandCompactTrailing(context: context)
             } minimal: {
                 Image("logo")
                     .resizable()
@@ -67,7 +55,7 @@ struct AuctionWidgetLiveActivity_Previews: PreviewProvider {
         awayWicketCount: "9",
         awayOverCount: "0",
         headerText: "IPL Match 25",
-        summaryText: "MI Won the toss and elected to Field",
+        summaryText: "MI Won the toss and elected to Bat first",
         innings: 0
     )
     
