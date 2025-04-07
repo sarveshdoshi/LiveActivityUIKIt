@@ -6,8 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C8B6B70E2DA264B60040A22C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B6B70D2DA264B60040A22C /* WidgetKit.framework */; };
+		C8B6B7102DA264B60040A22C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B6B70F2DA264B60040A22C /* SwiftUI.framework */; };
+		C8B6B71D2DA264B80040A22C /* LiveMatchScoreExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C8B6B70B2DA264B60040A22C /* LiveMatchScoreExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8B6B71B2DA264B80040A22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8B6B6E62DA257C40040A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8B6B70A2DA264B60040A22C;
+			remoteInfo = LiveMatchScoreExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8B6B7222DA264B80040A22C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C8B6B71D2DA264B80040A22C /* LiveMatchScoreExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C8B6B6EE2DA257C40040A22C /* LiveActivityUIKIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveActivityUIKIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B6B70B2DA264B60040A22C /* LiveMatchScoreExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveMatchScoreExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B6B70D2DA264B60040A22C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C8B6B70F2DA264B60040A22C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -15,6 +48,23 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+			);
+			target = C8B6B6ED2DA257C40040A22C /* LiveActivityUIKIt */;
+		};
+		C8B6B7212DA264B80040A22C /* Exceptions for "LiveMatchScore" folder in "LiveMatchScoreExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C8B6B70A2DA264B60040A22C /* LiveMatchScoreExtension */;
+		};
+		C8B6B72D2DA2BDE80040A22C /* Exceptions for "LiveMatchScore" folder in "LiveActivityUIKIt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Color+Extension.swift",
+				"Font+Extension.swift",
+				LiveMatchScoreAttributes.swift,
+				Views/LockScreenView.swift,
 			);
 			target = C8B6B6ED2DA257C40040A22C /* LiveActivityUIKIt */;
 		};
@@ -29,6 +79,15 @@
 			path = LiveActivityUIKIt;
 			sourceTree = "<group>";
 		};
+		C8B6B7112DA264B60040A22C /* LiveMatchScore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C8B6B72D2DA2BDE80040A22C /* Exceptions for "LiveMatchScore" folder in "LiveActivityUIKIt" target */,
+				C8B6B7212DA264B80040A22C /* Exceptions for "LiveMatchScore" folder in "LiveMatchScoreExtension" target */,
+			);
+			path = LiveMatchScore;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +98,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8B6B7082DA264B60040A22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B6B7102DA264B60040A22C /* SwiftUI.framework in Frameworks */,
+				C8B6B70E2DA264B60040A22C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				C8B6B6F02DA257C40040A22C /* LiveActivityUIKIt */,
+				C8B6B7112DA264B60040A22C /* LiveMatchScore */,
+				C8B6B70C2DA264B60040A22C /* Frameworks */,
 				C8B6B6EF2DA257C40040A22C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,8 +124,18 @@
 			isa = PBXGroup;
 			children = (
 				C8B6B6EE2DA257C40040A22C /* LiveActivityUIKIt.app */,
+				C8B6B70B2DA264B60040A22C /* LiveMatchScoreExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C8B6B70C2DA264B60040A22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8B6B70D2DA264B60040A22C /* WidgetKit.framework */,
+				C8B6B70F2DA264B60040A22C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,10 +148,12 @@
 				C8B6B6EA2DA257C40040A22C /* Sources */,
 				C8B6B6EB2DA257C40040A22C /* Frameworks */,
 				C8B6B6EC2DA257C40040A22C /* Resources */,
+				C8B6B7222DA264B80040A22C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C8B6B71C2DA264B80040A22C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C8B6B6F02DA257C40040A22C /* LiveActivityUIKIt */,
@@ -82,6 +164,28 @@
 			productName = LiveActivityUIKIt;
 			productReference = C8B6B6EE2DA257C40040A22C /* LiveActivityUIKIt.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C8B6B70A2DA264B60040A22C /* LiveMatchScoreExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8B6B71E2DA264B80040A22C /* Build configuration list for PBXNativeTarget "LiveMatchScoreExtension" */;
+			buildPhases = (
+				C8B6B7072DA264B60040A22C /* Sources */,
+				C8B6B7082DA264B60040A22C /* Frameworks */,
+				C8B6B7092DA264B60040A22C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C8B6B7112DA264B60040A22C /* LiveMatchScore */,
+			);
+			name = LiveMatchScoreExtension;
+			packageProductDependencies = (
+			);
+			productName = LiveMatchScoreExtension;
+			productReference = C8B6B70B2DA264B60040A22C /* LiveMatchScoreExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +198,9 @@
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					C8B6B6ED2DA257C40040A22C = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					C8B6B70A2DA264B60040A22C = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
@@ -113,12 +220,20 @@
 			projectRoot = "";
 			targets = (
 				C8B6B6ED2DA257C40040A22C /* LiveActivityUIKIt */,
+				C8B6B70A2DA264B60040A22C /* LiveMatchScoreExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C8B6B6EC2DA257C40040A22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8B6B7092DA264B60040A22C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +250,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8B6B7072DA264B60040A22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8B6B71C2DA264B80040A22C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8B6B70A2DA264B60040A22C /* LiveMatchScoreExtension */;
+			targetProxy = C8B6B71B2DA264B80040A22C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C8B6B7022DA257C50040A22C /* Debug */ = {
@@ -317,6 +447,62 @@
 			};
 			name = Release;
 		};
+		C8B6B71F2DA264B80040A22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NCSQ935268;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveMatchScore/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveMatchScore;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testing.iOSDevices.LiveMatchScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8B6B7202DA264B80040A22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NCSQ935268;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveMatchScore/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveMatchScore;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testing.iOSDevices.LiveMatchScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +520,15 @@
 			buildConfigurations = (
 				C8B6B7022DA257C50040A22C /* Debug */,
 				C8B6B7032DA257C50040A22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8B6B71E2DA264B80040A22C /* Build configuration list for PBXNativeTarget "LiveMatchScoreExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B6B71F2DA264B80040A22C /* Debug */,
+				C8B6B7202DA264B80040A22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
