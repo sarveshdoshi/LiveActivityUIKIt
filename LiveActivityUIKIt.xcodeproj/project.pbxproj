@@ -64,7 +64,12 @@
 				"Color+Extension.swift",
 				"Font+Extension.swift",
 				LiveMatchScoreAttributes.swift,
-				Views/LockScreenView.swift,
+				Views/LockScreen/AwayTeamScoreView.swift,
+				Views/LockScreen/BottomView.swift,
+				Views/LockScreen/CenterView.swift,
+				Views/LockScreen/HeaderView.swift,
+				Views/LockScreen/HomeTeamScoreView.swift,
+				Views/LockScreen/LockScreenView.swift,
 			);
 			target = C8B6B6ED2DA257C40040A22C /* LiveActivityUIKIt */;
 		};
