@@ -46,17 +46,17 @@ struct AuctionWidgetLiveActivity_Previews: PreviewProvider {
     static let attributes = LiveMatchScoreAttributes()
     
     static let contentState = LiveMatchScoreAttributes.ContentState(
+        headerText: "IPL Match 25",
         homeTeamName: "MI",
-        awayTeamName: "RCB",
         homeScore: "120",
-        homeWicketCount: "6",
-        homeOverCount: "0",
+        homeWicketCount: "1",
+        homeOverCount: "6",
+        awayTeamName: "RCB",
         awayScore: "110",
         awayWicketCount: "9",
-        awayOverCount: "0",
-        headerText: "IPL Match 25",
+        awayOverCount: "15.4",
         summaryText: "MI Won the toss and elected to Bat first",
-        innings: 0
+        innings: 2
     )
     
     static var previews: some View {

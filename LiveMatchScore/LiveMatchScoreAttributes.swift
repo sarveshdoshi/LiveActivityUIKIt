@@ -13,15 +13,15 @@ import SwiftUI
 struct LiveMatchScoreAttributes: ActivityAttributes {
     
     public struct ContentState: Codable, Hashable {
+        var headerText: String
         var homeTeamName: String
-        var awayTeamName: String
         var homeScore: String
         var homeWicketCount: String
         var homeOverCount: String
+        var awayTeamName: String
         var awayScore: String
         var awayWicketCount: String
         var awayOverCount: String
-        var headerText: String
         var summaryText: String
         var innings: Int
     }

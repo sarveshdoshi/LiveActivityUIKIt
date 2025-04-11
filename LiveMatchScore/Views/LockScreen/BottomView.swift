@@ -21,6 +21,6 @@ struct BottomView: View {
             .fixedSize(horizontal: false, vertical: true)
             .frame(maxWidth: .infinity, alignment: .center)
             .padding(.vertical, 10)
-            .background(Color.mint)
+            .background(Color.green)
     }
 }

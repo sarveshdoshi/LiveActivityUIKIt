@@ -31,7 +31,7 @@ struct CenterView: View {
                 Spacer()
                 Image("live")
                     .resizable()
-                    .frame(width: 48,height: 28)
+                    .frame(width: 48,height: 20)
                 Spacer()
                 AwayTeamScoreView(context: context)
             }
