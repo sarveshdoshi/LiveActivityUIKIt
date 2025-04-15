@@ -16,19 +16,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BgImage" translatesAutoresizingMaskIntoConstraints="NO" id="CSl-CT-4pD">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-1d-8nv">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                            </imageView>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qt5-xe-Z0T">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J9Z-0j-wHq">
+                                            <rect key="frame" x="40" y="80" width="313" height="87.333333333333314"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sarvesh Doshi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRT-6g-hme">
+                                                    <rect key="frame" x="0.0" y="0.0" width="313" height="48"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sr. iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-L8-AMU">
+                                                    <rect key="frame" x="0.0" y="56.000000000000007" width="313" height="31.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mya-RX-Sla">
+                                            <rect key="frame" x="40" y="309.66666666666669" width="313" height="313.00000000000006"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Mya-RX-Sla" secondAttribute="height" id="hfK-DN-ClL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub QR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ju7-G7-tBV">
+                                            <rect key="frame" x="98.666666666666686" y="241.66666666666663" width="196" height="48"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                            <color key="textColor" systemColor="systemCyanColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="J9Z-0j-wHq" secondAttribute="trailing" constant="40" id="47l-RT-0kx"/>
+                                        <constraint firstItem="J9Z-0j-wHq" firstAttribute="leading" secondItem="Qt5-xe-Z0T" secondAttribute="leading" constant="40" id="Vfp-FW-zbO"/>
+                                        <constraint firstItem="J9Z-0j-wHq" firstAttribute="top" secondItem="Qt5-xe-Z0T" secondAttribute="top" constant="80" id="Y9V-tl-9xf"/>
+                                        <constraint firstItem="Ju7-G7-tBV" firstAttribute="centerX" secondItem="Qt5-xe-Z0T" secondAttribute="centerX" id="ZGt-sp-P5S"/>
+                                        <constraint firstItem="Mya-RX-Sla" firstAttribute="leading" secondItem="Qt5-xe-Z0T" secondAttribute="leading" constant="40" id="aKC-ul-jBQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Mya-RX-Sla" secondAttribute="trailing" constant="40" id="fdS-vW-78K"/>
+                                        <constraint firstItem="Mya-RX-Sla" firstAttribute="centerY" secondItem="Qt5-xe-Z0T" secondAttribute="centerY" constant="40" id="i8M-iC-NTn"/>
+                                        <constraint firstItem="Mya-RX-Sla" firstAttribute="top" secondItem="Ju7-G7-tBV" secondAttribute="bottom" constant="20" id="kyH-Ml-sgJ"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="systemChromeMaterialDark"/>
+                            </visualEffectView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CSl-CT-4pD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Lb-9U-pwh"/>
-                            <constraint firstAttribute="bottom" secondItem="CSl-CT-4pD" secondAttribute="bottom" id="Dto-1y-QFM"/>
-                            <constraint firstItem="CSl-CT-4pD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LGK-sr-1nE"/>
-                            <constraint firstItem="CSl-CT-4pD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="T2O-2M-nLe"/>
+                            <constraint firstItem="dTM-1d-8nv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KVh-WS-f7n"/>
+                            <constraint firstItem="dTM-1d-8nv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NWI-xo-xhY"/>
+                            <constraint firstItem="dTM-1d-8nv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qfq-l8-fXh"/>
+                            <constraint firstAttribute="bottom" secondItem="dTM-1d-8nv" secondAttribute="bottom" id="qqS-Nq-LhX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="qrImageView" destination="Mya-RX-Sla" id="jnm-fg-8Ea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,9 +85,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BgImage" width="1280" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
